@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+
+<style>
+    body{
+        background-color:  #7fffd4;
+    }
+   .border-style{
+    border: 1px solid #7fffd4;
+   } 
+   .basic-style{
+    width: 200px;
+    height: 815px;
+    
+   }
+   nav span{
+    margin-right: 10px;
+    font-size: 20px;
+   }
+   .pic img{
+   border: 6px solid black;
+   border-top-right-radius: 500px;
+   border-bottom-left-radius: 500px;
+   border-bottom-right-radius: 500px;
+   border-top-left-radius: 500px;
+   
+     }
+   form{
+    color:black;
+    position: fixed;
+    }
+   .menu{
+    padding-top: 30px;
+     }
+   #about{
+    margin-bottom: 30px;
+    margin-left: 15px;
+   }
+   .dis{
+    margin-top: 60px;
+   }
+  
+   #about:hover{
+   color:black;
+    border-radius: 5px;
+     }
+   .last{
+    margin-top: 130px;
+    padding-left: 10px;
+    }
+   .home{
+    display: grid;
+    grid-template-columns: 4fr 8fr;
+   }
+   .about1{
+    display: flex;
+    justify-content: left;
+   }
+   .about2{
+    display: grid;
+    grid-template-columns: 4fr 8fr;
+   }
+   .tabout{
+    background-color:aquamarine;
+   }
+   .img{
+    padding: 20px;
+   }
+   .r1about{
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+     }
+   .bar{
+    display: grid;
+    grid-template-columns: 10fr 2fr;
+   }
+   nav{
+    position: fixed;
+   }
+   .pic1{
+    background-image: url(../public/images/rajesh.jpg);
+    background-size: cover;
+   }
+   section{
+    background-image: url(../public/image/rajesh.jpg);
+    background-size: cover;
+    margin-bottom: 460px;
+   }
+   .main1{
+    display: flex;
+    justify-content: center;
+    margin-right: 820px;
+    font-size: 28px;
+    font-family: arial;
+    font-weight: bold;
+   }
+   .table1{
+    display: flex;
+    justify-content: center;
+     }
+   .edu{
+    display: flex;
+    justify-content: center;
+    margin-right: 600px;
+   }
+   table{
+    border: 2px solid black;
+    font-weight: bold;
+   }
+   table tr{
+    border: 2px solid black;
+   }
+   table td{
+    border: 2px solid black;
+   }
+   table th{
+    border: 2px solid black;
+   }
+   .education{
+    margin-left: 340px;
+    margin-top: 10px;
+    font-family: arial;
+    
+   }
+   .skill{
+   display: grid;
+   grid-template-columns:6fr 6fr ;
+   text-align: center;
+   margin-top: 30px;
+   background-color: aquamarine;
+   }
+   .service{
+    display: flex;
+    justify-content: center;
+    
+   }
+   .app{
+    padding: 20px;
+    margin-bottom: 30px;
+
+   }
+   .card{
+    width: 300px;
+    padding: 10px;
+    height: 300px;
+    border: 1px solid black ;
+    border-radius: 4fr 4fr 4fr black;
+    margin-bottom: 30px;
+    background-color: transparent;
+    margin-top: 10px;
+     }
+   .cont{
+    padding: 30px;
+    background-color:transparent;
+    width: 1500px;
+    height: 700px;
+    margin-left: 300px;
+    margin-top: 90px;
+   }
+   .add{
+    margin-right:560px ;
+    font-size: 20px;
+    font-family: Arial;
+    font-style: italic;
+    width: 450px;
+    height: 600px;
+    padding: 10px;
+    background-color: transparent;
+    
+    }
+    .digram{
+        margin-bottom: 20px;
+    }
+    .map{
+    display: flex;
+    justify-content: center;
+    }
+    .rrr{
+        display: grid;
+        grid-template-columns: 6fr 6fr;
+     }
+    .right-map{
+        padding-left: 40px;
+        margin-left: 50px;
+        width: 500px;
+        height: 450px;
+      }
+      .n1{
+        margin-bottom: 20px;
+        font-weight: bold;
+      }
+      .m1{
+         border: 2px solid black;
+            height: 150px;
+            width: 400px;
+            margin-top: 30px;
+            padding-left: 10px;
+      }
+      button{
+            height: 10;
+            width: 80px;
+            margin-left: 50px;
+            background-color:rgb(2, 117, 216);
+            color: black;
+              }
+        .comp{
+            font-size: 30px;
+            font-family: arial;
+            padding: 5px;
+            margin-left: 40px;
+        }
+        .main img{
+            margin-bottom: 177px;
+        }
+        .logoo{
+            color: blue;
+            font-size: 10px;
+            font-weight: bold;
+        }
+        .project{
+            display: grid;
+            grid-template-columns: 6fr 6fe;
+        }
+       
+        
+
+    
+       
+    
+   
+</style>
+<body>
+   
+   <section>
+    <div class="home">
+        <div>
+            <form class="border-style basic-style shadow-style">
+                <nav>
+                    
+                    <div class="pic">
+                        <img src="../public/images/removepic.png" height="160px" width="190px">
+                    </div>
+                    <div class="menu">
+                        <div style="font-style:30px; color: black;"><font color="black" size="4px">RAJESH KUMAR SWAIN</font></div>
+                        <div class="logoo">
+                        <span class="bi bi-twitter" ></span>
+                        <span class="bi bi-facebook ms-3" ></span>
+                        <span class="bi bi-instagram ms-3"></span>
+                        <span class="bi bi-linkedin ms-3"></span>
+                    </div>
+                        <div class="dis" >
+                         <div id="about"><span class="bi bi-house"> <a href="#home12">Home </a></span></div>
+                         <div id="about" ><span class="bi bi-person-fill"> <a href="#rajesh">ABOUT </a></span>
+                        </div>
+                         <div id="about"><span class="bi bi-file-earmark-text">  <a href="#resum">RESUME</a></span></div>
+                         <div id="about"><span class="bi bi-file-ruled">  <a href="#total service">SERVICE </a></span></div>
+                         <div id="about"><span class="bi bi-envelope">  <a href=" #details">CONTACT </a></span></div>
+                         </div>
+                         <div class="last">
+                            <p style="font-family: arial; font-weight: bold;"><font color="blue">© Copyright</font><br>
+                                Designed by me</p>
+                                 
+                         </div>
+                        
+                    </div>
+
+                    
+               
+
+
+                </nav>
+
+            </form>
+
+        </div>
+        <div class="main img">
+        <div class="tabout" id="home12">
+          <div class="pic1"><img src="../public/images/home pic.png" width="1190px" height="685px" ></div></div> <br><br>
+         
+            <h4 id="rajesh">ABOUT</h4>
+            <div class="about1">
+         </div>
+         <div>
+            <h3>What Does Web Designer Mean?</h3>
+         </div>
+         <div>
+            <p>A Web designer is someone who prepares content for the Web. This role is mainly related to the styling and layout of pages with content, including text and images. Web designers use many technologies but commonly rely on hypertext and hypermedia resources including HTML, CSS and additional Web design tools.
+            </p>
+            </div>
+            <div class="about2">
+                <div class="img">
+                  <img src="../public/images/profile photo.png" height="260px" width="545px">
+                </div>
+                <div>
+                   <div style="font-size:25px; font-weight: bold; color: rgba(0, 0, 0, 0.781);" >UI/UX Designer & Web Developer.</div>
+                   <div class="rabout">
+                    <div class="r1about">
+                     <div>Birthday: 3 july 2001</div>
+                     <div class="mt-3">Phone:+19 8144155971</div>
+                     <div  class="mt-3">E-mail:rajesh@gmail.com</div>
+                     <div  class="mt-3">Address:Nayagarh,Odisha</div>
+
+                    </div>
+                    <div>
+                        <h3 class="mt-3">CAREER OBJECTIVE.</h3>
+                        <span>Seeking challenging environment that encourages and continues learning and creativity providing 
+                            exposure to ideas and stimulates personal and professional growth.
+                        <span>
+                        
+                    </div>
+                    
+                    </div>
+                   
+                </div>
+                
+                
+                    
+            
+               
+            </div>
+
+        </div>
+
+    
+    </div>
+
+
+   
+   
+</section><br><hr>
+<main id="resum">
+    <div class="main1">
+    RESUME
+    </div>
+     <div class="edu">
+        <h3>Education Qualification</h3>
+     </div>
+     <div class="table1">
+        <table>
+           <tr>
+            <th>EXAM</th>
+            <th>YEAR</th>
+            <th>NAME OF THE INSTITUTE</th>
+            <th>UNIVERSITY/BOARD</th>
+           </tr>
+           <tr>
+            <td>10th</td>
+            <td>2017</td>
+            <td>Ramachandi High school</td>
+            <td>OBSE</td>
+           </tr> 
+           <tr>
+            <td>+2 Science</td>
+            <td>2019</td>
+            <td>UNIITECH Residential College,Nayagarh</td>
+            <td>CHSE,ODISHA</td>
+           </tr> 
+           <tr>
+            <td>B.Sc(Computer science)</td>
+            <td>2022</td>
+            <td>Nayagarh Autonomous College,Nayagarh</td>
+            <td>UTKAL UNIVERSITY</td>
+           </tr> 
+        </table>
+       
+     </div>
+     <div class="education">
+        <p>Education is about learning skills and knowledge. It also means helping people to learn how to do things and support them to think about what they learn. It's also important for educators to teach ways to find and use information. Education needs research to find out how to make it better.</p>
+    </div>
+    <div class="skill">
+        
+
+        
+        
+        <div>
+           <li>HTML</li><input type="range"  min="0" max="100" value="90">
+            <li>CSS</li><input type="range"  min="0" max="100" value="70">
+            <li>JavaScript</li><input type="range"  min="0" max="100" value="30">
+            <li>React.js</li><input type="range"  min="0" max="100" value="10">
+        </div>
+        <div>
+            <li>Node.Js</li><input type="range"  min="0" max="100" value="10">
+            <li>Angular.Js</li><input type="range"  min="0" max="100" value="10">
+            <li>MongoDB</li><input type="range"  min="0" max="100" value="30">
+        </div>
+        <div>
+            <h3 class="ms-4 mt-5">COMPUTER PROFICIENCY</h3>
+            <div class="comp">
+            <div class="ms-5"><font color="black" size="5">Fontend-</font><font color="blue" size="4">HTML,CSS,JavaScript,bootstrap,jQUERY</font></div>
+            <DIV class="me-3"><font color="black" size="5">Backend-</font><font color="blue" size="4"> Node.js,MongoDB</font></DIV>
+            <div><font color="black" size="5"></font>JavaScript Libbrary-</font><font color="blue" size="4">React.js</font></div>
+        </div>
+        </div>
+        <div class="comp">
+            <h3>EXTRA CURRICULUM ACTIVITIS</h3>
+            <div><font color="blue" size="4">Love Swimming </font></div>
+            <div><font color="blue" size="4">Love to Cycling</font></div>
+            <div><font color="blue" size="4">Loving Travelling</font></div>
+        </div>
+    
+
+    </div><br><br><br><br>
+     <br> <br><hr>
+</main>
+<div class="project">
+    <div>
+       hiiiiiiii
+    </div>
+    <div>
+      ppppppppp
+    </div>
+</div>
+<div class="app" ID="total service">
+    <h1 align="center">My Service</h1>
+    <div class="service">
+    
+    <div class="card ms-4">
+        <div class="bi bi-github" align="center" style="font-size: 50px;"></div>
+                        <h3 align="center">WEB DEVELOPMENT</h3>
+                        <p align="center">Web development refers to the building, creating, and maintaining of websites.
+                        </p>
+    </div>
+    <div class="card ms-4">
+        <div class="bi bi-apple" align="center" style="font-size: 50px;"></div>
+        <h3 align="center">APP DEVELOPING</h3>
+        <p align="center">Mobile app development is the act or process by which a mobile app is developed for mobile devices,
+        </p>
+    </div>
+    <DIV class="card ms-4">
+        <div class="bi bi-camera" align="center" style="font-size: 50px;"></div>
+        <h3 align="center">PHOTOGRAPHY</h3>
+        <p align="center">Photography is the art, application, and practice of creating durable images by recording light,
+        </p>
+    </DIV>
+</div>
+</div>
+<div class="service mt-3">
+    
+    <div class="card ms-4">
+        <div class="bi bi-box" align="center" style="font-size: 50px;"></div>
+                        <h3 align="center">WEB DESIGN</h3>
+                        <p align="center">Web design encompasses many different skills and disciplines in the production and maintenance of websites. 
+                        </p>
+    </div>
+    <div class="card ms-4">
+        <div class="bi bi-camera-reels" align="center" style="font-size: 50px;"></div>
+        <h3 align="center">CAMERA REELS</h3>
+        <p align="center">Reel in motion pictures, a light circular frame with radial arms and a central axis, originally designed to hold approximately 1,000 feet (300 m) of 35-millimetre motion-picture film.
+        </p>
+    </div>
+    <DIV class="card ms-4">
+        <div class="bi bi-search" align="center" style="font-size: 50px;"></div>
+        <h3 align="center">SEARCH</h3>
+        <p align="center">A search box, search field or search bar is a graphical control element used in computer programs, such as file managers or web browsers, and on web sites. 
+        </p>
+    </DIV>
+    
+
+ </div> <br><br>
+   <footer id="details">
+    <div class="cont">
+    <h1 align="center">CONTACT</h1>
+   
+    <div class="contact" align="center">
+        <div class="add" align="left">
+            <h3 >Contact Me</h3>
+            
+            <div class="digram">
+                <div class="mb-3">
+              <font color="black" size="5"> <span class="bi bi-envelope"></span></font> <font color="black" size="5">E-mail-</font><font color="red">rajesh9078@gmail.com</font>
+              </div>
+              <font color="black" size="5"> <span class="bi bi-phone "></span></font> <font color="black" size="5"> phone no-</font><font color="red"> 8144155971</font></div>
+              <font color="black" size="5"><span class="bi bi-geo-alt"></span> </font><font color="black" size="5"> Location</font>
+              <div class="rrr">
+                <div>
+                    <div class="map"><img src="../public/images/location.jpg" height="400px" width="500px"></div>
+              
+                </div>
+                <div class="right-map">
+                    <div>
+                        <div class="n1 mt-3">
+                            <font size="5px">Your Name</font> <input type="text" placeholder="Your Name">
+                           </div> 
+                    </div>
+                    <div class="n1"> 
+                        <font size="5px">Your E-mail </font><input type="text" placeholder="Enter E-mail">
+                       </div>
+                       <div class="n1">
+                       <span> 
+                        <font size="5px">Subject</font> <input type="text" placeholder="Subject">
+                       </span>
+                        </div>
+                          <div class="n1">
+                            <font size="5px">Enter Phone No</font> <input type="text" placeholder="Enter No..">
+                          </div>
+                            <div class="m1">
+                                <div>
+                                    <h4>Text Message......</h4>
+                                   </div>
+                                  </div>
+                          <a href="submission.html" ><button> <font color="white">Submit</font></a></button>
+
+                          </div>
+                </div>
+              </div>
+             
+            </div>
+            <div class="">
+                hooooo
+            </div>
+            
+            
+        </div>
+    
+        </div>
+        
+       
+    </div>
+</div>
+   <div>
+
+   
+   </div>
+
+   </footer>
+
+</div>
+</body>
+</html>

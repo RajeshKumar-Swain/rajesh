@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float</title>
+    <style>
+        body{
+            background-image:url(../public/images/thar.jpg) ;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+           
+        }
+        .shade-background{
+         color: white;
+         background-color:rgba(0, 0, 0, 0.5);
+         height: 1072px;
+
+        }
+     .tharback{
+        float: left;
+        transform: translatey(0px);
+        transition: 2s;
+       }
+       .tharback:hover{
+        transform: translatey(300px);
+        transition: 2s;
+       }
+       .scale{
+        transform: scale(1);
+        transition: 2s;
+        
+       }
+       .scale:hover{
+        transform: scale(2);
+            transition: 1s;
+            font-size: 50px;
+            color: red;
+       }
+        
+        .heading{
+        justify-items: center;
+        display: flex;
+        justify-content: center;
+        letter-spacing: 80px;
+        padding-bottom: 40px;
+       }
+         
+        p{
+            clear: left;
+        }
+        .thar2b{
+            transform: skewy(0deg);
+            transition: 5s;
+            display: flex;
+            justify-content: center;
+            justify-items: center;
+
+            
+        }
+        .thar2b:hover{
+            transform: skewy(90deg);
+            transition: 5s;
+             }
+             .imag1{
+                transform: scale(1,1);
+                transition: 2s;
+                float: right;
+             }
+             .imag1:hover{
+                transform: scale(3,3);
+                transition: 2s;
+             }
+             P:hover{
+                color: red;
+                
+             }
+              
+             
+    </style>
+</head>
+<body>
+    <div class="shade-background">
+        <img class="imag1" src="../public/images/tharbe.png" height="500px" width="500px" >
+        <div>
+            <h2 class="heading"><span class="scale">T </span> <span class="scale">H </span> <span class="scale">A</span> <span class="scale">R</span></h2>
+            <p style="font-size: 30px ; padding-left: 10px; text-align: justify; font-weight: bold; font-style: italic;">
+                The petrol Mahindra Thar is simply a dream to drive. Silent, smooth, and feels as capable off-road. Mahindra has done wonders with this engine, which works in favour of its charm. However, comparing the Thar to its price segment contenders doesn’t seem do justice since owning one is all about a life-statement. Nevertheless, frugality, fit and finish in several areas, a few ergonomic irritants and some occupant discomfort are the by-products of an otherwise evolved Thar. On the contrary, no other car I’ve driven till date has attracted as much attention as the new Thar.</p>
+                <div>
+                    <div class="thar2b">
+                    <img src="../public/images/thar2b.png" height="300px" width="300px" >
+                    <h3>THAR</h3>
+                </div>
+                   <div class="tharback">
+                    <img src="../public/images/tharbe.png" height="150px" width="150px" >
+                   </div>
+                   <div>
+                    <marquee scrollamount="15" onmouseover="this.stop()" onmouseout="this.start()">
+                        <h1 style="color: RED; font-size: 50px; font-style: italic; letter-spacing: 5px;">@THAR</h1>
+
+                    </marquee>
+                   </div>
+                </div>
+        </div>
+    </div>
+    <div>
+       
+    </div>
+</body>
+</html>
